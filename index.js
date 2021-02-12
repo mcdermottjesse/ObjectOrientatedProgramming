@@ -1,21 +1,21 @@
 
 function newTask(title, description) {
   const task = {
-  title: title,
-  description: description,
-  complete: false,
+    title: title,
+    description: description,
+    complete: false,
 
-logState: function() {
-  console.log(`${this.title} has${this.complete ? " " : " not "}been completed`);
-},
+    logState: function () {
+      console.log(`${this.title} has${this.complete ? " " : " not "}been completed`);
+    },
 
 
-// marks the provided task as completed
-markCompleted: function() {
-  this.complete = true;
-}
-};
-return task;
+    // marks the provided task as completed
+    markCompleted: function () {
+      this.complete = true;
+    }
+  };
+  return task;
 }
 
 // DRIVER CODE BELOW
